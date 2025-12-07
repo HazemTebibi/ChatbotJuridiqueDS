@@ -1,26 +1,26 @@
-================================================================================
+ 
             CHATBOT JURIDIQUE RAG - DROIT DU TRAVAIL FRANÇAIS
-================================================================================
+
 
 Assistant virtuel spécialisé en droit du travail français utilisant la 
 technologie RAG (Retrieval-Augmented Generation).
 
-================================================================================
+ 
 PRÉREQUIS
-================================================================================
+ 
 
 - Python 3.8 ou supérieur
 - pip (gestionnaire de paquets Python)
 - Compte Google (pour Google Colab)
 - Clé API Gemini (optionnelle) : https://makersuite.google.com/app/apikey
 
-================================================================================
+ 
 INSTALLATION ET EXÉCUTION
-================================================================================
+ 
 
---------------------------------------------------------------------------------
+ 
 OPTION 1 : Google Colab (Recommandé)
---------------------------------------------------------------------------------
+ 
 
 1. Ouvrir Google Colab : https://colab.research.google.com
 
@@ -38,9 +38,9 @@ OPTION 1 : Google Colab (Recommandé)
 
 7. Cliquer sur le lien Gradio généré
 
---------------------------------------------------------------------------------
+ 
 OPTION 2 : Installation Locale
---------------------------------------------------------------------------------
+ 
 
 1. Créer un environnement virtuel :
    
@@ -81,27 +81,27 @@ Le programme va automatiquement :
 
 Durée totale : ~7-10 minutes
 
-================================================================================
+ 
 UTILISATION
-================================================================================
+ 
 
---------------------------------------------------------------------------------
+ 
 Questions acceptées ✓
---------------------------------------------------------------------------------
+ 
 - "Quelle est la durée légale du travail ?"
 - "Quels sont mes droits au congé payé ?"
 - "Qu'est-ce que le harcèlement moral ?"
 - "Comment fonctionne le licenciement économique ?"
 
---------------------------------------------------------------------------------
+ 
 Questions refusées ✗
---------------------------------------------------------------------------------
+ 
 - "Comment créer une SARL ?" (hors périmètre)
 - "Quel est le taux de TVA ?" (hors périmètre)
 
-================================================================================
+ 
 DÉMONSTRATION
-================================================================================
+ 
 
 Le programme inclut 4 tests automatiques qui s'exécutent avant le lancement 
 de l'interface.
@@ -111,9 +111,9 @@ Pour tester manuellement dans le code :
 result = rag_pipeline.process_query("Votre question ici")
 print(result['response'])
 
-================================================================================
+ 
 RÉSOLUTION DE PROBLÈMES
-================================================================================
+ 
 
 Erreur d'installation :
     pip install --upgrade pip
@@ -125,9 +125,9 @@ Port déjà utilisé :
 Gradio ne se lance pas :
     pip install gradio==4.13.0 --force-reinstall
 
-================================================================================
+ 
 FICHIERS GÉNÉRÉS AUTOMATIQUEMENT
-================================================================================
+ 
 
 Lors de l'exécution, le programme crée :
 
@@ -146,34 +146,34 @@ Lors de l'exécution, le programme crée :
 
 Note : Ces fichiers sont créés automatiquement, ne pas les créer manuellement.
 
-================================================================================
+ 
 AVERTISSEMENT
-================================================================================
+ 
 
 Ce chatbot est éducatif uniquement. Il ne constitue pas un avis juridique. 
 Consultez un avocat pour des conseils personnalisés.
 
-================================================================================
+ 
 DÉMARRAGE RAPIDE
-================================================================================
+ 
 
---------------------------------------------------------------------------------
+ 
 Google Colab :
---------------------------------------------------------------------------------
+ 
 1. Ouvrir colab.research.google.com
 2. Copier le code Python dans une cellule
 3. Runtime > Run all
 4. Attendre 5-7 min
 5. Cliquer sur le lien Gradio
 
---------------------------------------------------------------------------------
+ 
 Local :
---------------------------------------------------------------------------------
+ 
 python -m venv venv
 source venv/bin/activate
 pip install [toutes les dépendances ci-dessus]
 python rag_ds.py
 
-================================================================================
+ 
 C'est tout !
-================================================================================
+ 
